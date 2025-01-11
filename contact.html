@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | personalweb</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <div class="navlist">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+              Porto<span>folio</span>
+            </div>
+            <div class="links">
+              <a href="#home" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">Home</a>
+              <a href="#about" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">About</a>
+              <a href="#skill" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">Skills</a>
+              <a href="#projects" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">Projects</a>
+              <a href="#contact" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">Contact</a>
+            </div>
+        </div>
+        <div id="menu-icon" class="hamburg" aria-label="Open menu">☰</div>
+
+        
+        <!-- Dropdown menu -->
+        <nav class="dropdown">
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="skill.html">Skills</a>
+                <a href="project.html">Projects</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+
+        <!-- Button to close the dropdown -->
+        <div class="cancel">&times;</div>
+    </header>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="row">
+                <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                    Con<span>tact Me</span>
+                    <p>If you're interested in working with me or have any questions, feel free to reach out.</p>
+                    <p><i class='bx bx-envelope'></i> skyhrirpl@gmail.com</p>
+                    <p><i class='bx bxs-phone'></i> (+62) 88976707168</p>
+                </div>
+                <div class="contact-right">
+                    <form id="contactForm">
+                        <input type="text" id="name" placeholder="Your Name" required>
+                        <input type="email" id="email" placeholder="Your Email" required>
+                        <textarea id="message" name="Message" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="porto.js"></script>
+</body>
+</html>
