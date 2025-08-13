@@ -333,6 +333,7 @@ a.btn:hover {
     width: 550px;
     height: 550px;
     object-fit: cover;
+    margin-right: 10px;
     border-radius: 50%;
     box-shadow: 0 4px 10px rgba(0, 255, 255, 0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -724,6 +725,7 @@ a.btn:hover {
     .container img {
         width: 200px;
         height: 200px;
+        margin-top: -10px; 
     }
 
     /* Projects responsive */
@@ -827,6 +829,7 @@ a.btn:hover {
         overflow-y: auto;
     }
 }
+
 
 
 
