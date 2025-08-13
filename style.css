@@ -330,8 +330,8 @@ a.btn:hover {
 
 
 .container img {
-    width: 650px;
-    height: 650px;
+    width: 600px;
+    height: 600px;
     object-fit: cover;
     border-radius: 50%;
     box-shadow: 0 4px 10px rgba(0, 255, 255, 0.3);
@@ -722,8 +722,8 @@ a.btn:hover {
     }
 
     .container img {
-        width: 250px;
-        height: 250px;
+        width: 200px;
+        height: 200px;
     }
 
     /* Projects responsive */
@@ -827,3 +827,4 @@ a.btn:hover {
         overflow-y: auto;
     }
 }
+
