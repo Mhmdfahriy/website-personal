@@ -330,8 +330,8 @@ a.btn:hover {
 
 
 .container img {
-    width: 600px;
-    height: 600px;
+    width: 400px;
+    height: 400px;
     object-fit: cover;
     border-radius: 50%;
     box-shadow: 0 4px 10px rgba(0, 255, 255, 0.3);
@@ -827,4 +827,5 @@ a.btn:hover {
         overflow-y: auto;
     }
 }
+
 
