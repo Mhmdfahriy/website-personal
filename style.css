@@ -175,28 +175,30 @@ section {
 
 /* Tulisan Bergerak */
 .change-text {
-  font-size: 1.5rem;
-  font-weight: 600;
-  text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 3rem;
 }
 
 .change-text h3 {
-  position: relative;
-  display: flex;          /* flex biar bisa center */
-  flex-direction: column; /* taruh Dan Saya di atas, word di bawah */
-  align-items: center;    /* center horizontal */
-  margin: 0;
+    position: relative;
+    display: block;
+    text-align: center;
+    margin: 0 auto; 
 }
+
 
 .change-text h3 .word {
-  position: absolute;
-  top: 100%;              /* taruh tepat di bawah "Dan Saya" */
-  left: 50%;
-  transform: translateX(-50%);
-  opacity: 0;
-  white-space: nowrap;    /* biar ga kepotong */
+    position: absolute;
+    width: 100%;          
+    left: 2;              
+    transform: none;     
+    text-align: center;   
+    display: flex;
+    justify-content: center;
+    opacity: 0;
 }
-
 
 .change-text h3 .word .letter {
     transform-origin: center center 25px;
@@ -708,18 +710,21 @@ a.btn:hover {
     }
 
     .change-text {
-    font-size: 1.2rem;
+    font-size: 1.2rem; /* biar lebih pas di hp */
   }
 
   .change-text h3 {
-    align-items: center;
+    text-align: center;
   }
 
   .change-text h3 .word {
-    font-size: 1.2rem;
-    top: 100%; 
+    position: absolute;
+    width: 100%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%); /* selalu center horizontal */
+    text-align: center;
+    display: flex;
+    justify-content: center;
   }
 
     .info-box {
@@ -855,4 +860,3 @@ a.btn:hover {
         overflow-y: auto;
     }
 }
-
