@@ -177,16 +177,19 @@ section {
 .change-text {
     font-size: 1.5rem;
     font-weight: 600;
+    text-align: center;
 }
 
 .change-text h3 {
-    display: inline-flex;
+    position: relative;     
+    display: inline-block;
     margin: 0;
-    vertical-align: top;
 }
 
 .change-text h3 .word {
     position: absolute;
+    left: 50%;              
+    transform: translateX(-50%); 
     display: flex;
     opacity: 0;
 }
