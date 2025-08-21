@@ -701,8 +701,13 @@ a.btn:hover {
     }
 
     .change-text {
-        justify-content: center;
+        text-align: center;
         font-size: 1.2rem;
+    }
+
+    .change-text h3 {
+        display: inline-block;
+        margin: 0;
     }
 
     .info-box {
