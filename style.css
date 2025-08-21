@@ -181,20 +181,22 @@ section {
 }
 
 .change-text h3 {
-    display: block;      
-    text-align: center;    
-    margin: 0;
+    position: relative;
+    display: block;
+    text-align: center;
 }
 
 
 .change-text h3 .word {
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    width: 100%;          
+    left: 0;              
+    transform: none;      
+    text-align: center;   
     display: flex;
+    justify-content: center;
     opacity: 0;
 }
-
 
 .change-text h3 .word .letter {
     transform-origin: center center 25px;
