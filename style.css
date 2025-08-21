@@ -190,7 +190,7 @@ section {
 .change-text h3 .word {
     position: absolute;
     width: 100%;          
-    left: 0;              
+    left: 2;              
     transform: none;      
     text-align: center;   
     display: flex;
@@ -708,14 +708,22 @@ a.btn:hover {
     }
 
     .change-text {
-        text-align: center;
-        font-size: 1.2rem;
-    }
+    font-size: 1.2rem; /* biar lebih pas di hp */
+  }
 
-    .change-text h3 {
-        display: inline-block;
-        margin: 0;
-    }
+  .change-text h3 {
+    text-align: center;
+  }
+
+  .change-text h3 .word {
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%); /* selalu center horizontal */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
 
     .info-box {
         justify-content: center;
