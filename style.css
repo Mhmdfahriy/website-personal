@@ -716,24 +716,34 @@ a.btn:hover {
     margin-bottom: 3rem;
 }
 
-.change-text h3 {
-    position: relative;
-    display: block;
-    text-align: center;
-    margin: 0 auto; 
-}
+    .change-text h3 {
+        position: relative;
+        display: inline-block;   /* penting biar ukurannya pas teks aja */
+        margin: 0 auto; 
+        text-align: center;
+        line-height: 2rem;
+    }
 
+    /* animasi word */
+    .change-text h3 .word {
+        position: absolute;
+        top: 100%;               /* taruh tepat di bawah "Dan Saya" */
+        left: 50%;               
+        transform: translateX(-50%); /* kunci biar center sempurna */
+        text-align: center;   
+        opacity: 0;
+        transition: opacity 0.5s ease;
+        white-space: nowrap;
+    }
 
-.change-text h3 .word {
-    position: absolute;
-    width: 100%;          
-    left: 2;              
-    transform: none;     
-    text-align: center;   
-    display: flex;
-    justify-content: center;
-    opacity: 0;
-}
+/* kasih jarak bawah sebelum deskripsi */
+    .change-text h3 .word.active {
+        opacity: 1;
+    }
+
+    .change-text + p {
+        margin-top: 2rem;  /* kasih jarak 2rem antara animasi & deskripsi */
+    }
 
     .info-box {
         justify-content: center;
@@ -868,3 +878,4 @@ a.btn:hover {
         overflow-y: auto;
     }
 }
+
