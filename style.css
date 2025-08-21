@@ -327,13 +327,17 @@ a.btn:hover {
     transform: translate(-50%, -50%) scale(1);
 }
 
-
+.container {
+    width: 80%;
+    max-width: 650px;
+    margin: 2rem auto;
+    text-align: center;
+}
 
 .container img {
-    width: 550px;
-    height: 550px;
+    width: 500px;
+    height: 500px;
     object-fit: cover;
-    margin-right: 10px;
     border-radius: 50%;
     box-shadow: 0 4px 10px rgba(0, 255, 255, 0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -617,6 +621,9 @@ a.btn:hover {
     box-shadow: 0 0 10px rgba(18, 247, 255, 0.3);
 }
 
+
+
+
 /* Media responsif */
 @media (max-width: 768px) {
     header {
@@ -717,15 +724,12 @@ a.btn:hover {
 
     /* Profile image container */
     .container {
-        width: 80%;
         max-width: 300px;
-        margin: 2rem auto;
     }
 
     .container img {
-        width: 200px;
-        height: 200px;
-        margin-top: -10px; 
+        width: 250px;
+        height: 250px;
     }
 
     /* Projects responsive */
@@ -813,6 +817,11 @@ a.btn:hover {
     .container {
         width: 70%;
     }
+
+    .container img {
+        width: 180px;
+        height: 180px;
+    }
 }
 
 /* Landscape orientation */
@@ -829,7 +838,3 @@ a.btn:hover {
         overflow-y: auto;
     }
 }
-
-
-
-
